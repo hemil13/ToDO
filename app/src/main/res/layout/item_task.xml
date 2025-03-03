@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:elevation="2dp">
+
+    <!-- CheckBox for Task Completion -->
+    <CheckBox
+        android:id="@+id/taskCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/teal_700"/>
+
+    <!-- Task Text -->
+    <TextView
+        android:id="@+id/taskText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_baseline_edit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Edit task" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_baseline_delete"
+        android:layout_toStartOf="@id/iv_edit"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Delete task" />
+
+
+</LinearLayout>
